@@ -37,7 +37,7 @@ theme: minima
 # plugins:
 #   -
 
-feed:
+#feed:
 #  path: /feeds.opml
 
 # Exclude from processing.
