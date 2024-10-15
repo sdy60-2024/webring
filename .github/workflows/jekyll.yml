@@ -44,15 +44,11 @@ jobs:
         run: |
           touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
       - name: Check Ruby version
-        run: ruby --version
-      
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
-      
-      
-      
+        run: ruby --version  
+
+
+
+  
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
