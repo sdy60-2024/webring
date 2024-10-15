@@ -11,10 +11,10 @@ on:
   push:
     branches: ["main"]
 
- # Runs every one hour
+  # Runs every one hour
   schedule:
     - cron: '5 */1 * * *'
-    
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -34,28 +34,38 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
+
     steps:
-      
-
-
-
-  
       - name: Checkout
         uses: actions/checkout@v4
+
+      # Set up Ruby environment
       - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42 # v1.161.0
+        uses: ruby/setup-ruby@v1.161.0 # Use the latest Ruby setup action
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          ruby-version: '3.1' # Ruby version to use
+          bundler-cache: true # Cache gems to speed up builds
+          cache-version: 0 # Increment this number to invalidate the cache if needed
+
+      # Install Jekyll dependencies
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
+      # Setup Pages environment
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      # Build the Jekyll site
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+
+      # Upload the built site as an artifact for deployment
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
