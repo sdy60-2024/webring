@@ -7,6 +7,6 @@ layout: default
 {{ site.description | escape }}
 
 
-## Recent Posts from Webring Members
+## Team members' Curriculum Vitae
 
 {% include member-posts.html %}
