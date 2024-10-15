@@ -9,4 +9,4 @@ layout: default
 
 ## Team members' Curriculum Vitae
 
-{% include member-posts.html %}
+{% include member-cv.html %}
