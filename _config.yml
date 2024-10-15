@@ -25,9 +25,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the Webring required to be built for the Part A of our collaborative assignemnt in SDY 60 - 2024. 
   Please note that any changes will not be shown directly there is an automated job running every one hour. :) 
 
-baseurl: /webring-starter # the subpath of your site, e.g. /blog
-url: https://marigian.github.io
-repository: Marigian/webring-starter
+baseurl: /webring # the subpath of your site, e.g. /blog
+url: https://github.com/sdy60-2024
+repository: sdy60-2024/webring
 
 # END: You *can* customize the stuff below but you don't need to.
 
