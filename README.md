@@ -8,7 +8,7 @@ When you want to update your CV info just follow this path _include > members-cv
 
 Example that you should add :
 
-
+```html
 <li>
     <h3>
       <a class="post-link" href="https://github.com/XXX/linkhere">
