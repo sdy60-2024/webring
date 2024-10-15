@@ -30,7 +30,8 @@ repository: Marigian/webring-starter
 
 # END: You *can* customize the stuff below but you don't need to.
 
-theme: minima
+#theme: minima
+theme:tale
 
 # Build settings
 # plugins:
