@@ -11,7 +11,7 @@ on:
   push:
     branches: ["main"]
 
-  # Runs every six hours
+ # Runs every one hour
   schedule:
     - cron: '5 */1 * * *'
     
@@ -35,6 +35,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Ruby 3.1.4
+        run: |
+          git clone https://github.com/rbenv/ruby-build.git
+          PREFIX=/usr/local ./ruby-build/install.sh
+          ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
+      - name: Mark Ruby installation as complete
+        run: |
+          touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
+      - name: Check Ruby version
+        run: ruby --version
+      
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+      
+      
+      
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Ruby
