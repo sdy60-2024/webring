@@ -3,14 +3,13 @@
     {
       "name": "Marina Gia",
       "url": "https://github.com/Marigian/marigian.github.io",
-      "author": "Marina Giannakakou <std153510@ac.eap.gr>",
-      "rss": "https://billhunt.dev/feed.xml"
+      "author": "Marina Giannakakou <std153510@ac.eap.gr>"
     },
     {
       "name": "Somebody",
       "url": "https://www.example.com/",
-      "author": "Somebody <somebody@example.com>",
-      "rss": "https://www.example.com/feed.xml"
+      "author": "Somebody <somebody@example.com>"
+
     }
   ]
 }
