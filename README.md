@@ -11,8 +11,8 @@ Example that you should add :
 ```html
 <li>
     <h3>
-      <a class="post-link" href="https://github.com/XXX/linkhere">
-        Somebody X  <!-- Display the member name -->
+      <a class="post-link" href="[https://vagnta.github.io/Biografiko/]">
+        Somebody X  <!-- Νταούτης Ευάγγελος -->
       </a>
     </h3>
   </li>
