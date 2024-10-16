@@ -2,6 +2,7 @@
 
 Webring is based in Webring Starter is a modern, simple webring that anyone can setup and use!
 Please note that there is an automated build occuring every 1 hour to push the changes live. 
+Before you make any changes you need to create a new branch, no need for multiple.
 
 This is a 2-step process: 
 
@@ -29,3 +30,5 @@ This is a 2-step process:
     }
 
 ```
+
+
