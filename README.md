@@ -1,8 +1,10 @@
-# webring
+# webring url of SDY60-2024
+## https://sdy60-2024.github.io/webring/
+
+
 
 Webring is based in Webring Starter which is a modern, simple webring that anyone can setup and use!
 Please note that there is an automated build occuring every 1 hour to push the changes live (after your pull request has been approved). 
-Before you make any changes you need to create a new branch, no need for multiple.
 
 This is a 2-step process: 
 
